@@ -1,0 +1,45 @@
+[
+  {
+    "kernelSource": {
+      "name": "CrDroid-System_ext-14",
+      "repo": "https://github.com/Ariden24/android_kernel_xiaomi_sdm845",
+      "branch": "14.0-system_ext",
+      "device": "polaris",
+      "defconfig": "polaris_defconfig"
+    },
+    "enableCcache": true,
+    "toolchains": [
+      {
+        "repo": "https://gitlab.com/LeCmnGend/proton-clang",
+        "branch": "clang-17",
+        "name": "proton-clang",
+        "binaryEnv": [
+          "bin"
+        ]
+      }
+    ],
+    "params": {
+      "ARCH": "arm64",
+      "CC": "proton-clang/bin/clang",
+      "externalCommands": {
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "AR": "proton-clang/bin/llvm-ar",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+        "OBJDUMP": "proton-clang/bin/llvm-objdump",
+        "READELF": "proton-clang/bin/llvm-readelf",
+        "OBJSIZE": "proton-clang/bin/llvm-size",
+        "STRIP": "proton-clang/bin/llvm-strip",
+        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true
+    }
+  }
+]
