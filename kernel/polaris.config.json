@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "CrDroid-System_ext-14",
+      "name": "CrDroid-14",
       "repo": "https://github.com/Ariden24/android_kernel_xiaomi_sdm845",
-      "branch": "14.0-system_ext",
+      "branch": "14.0",
       "device": "polaris",
       "defconfig": "polaris_defconfig"
     },
