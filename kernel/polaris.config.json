@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "test",
+      "name": "crdroid_11.0",
       "repo": "https://github.com/crdroidandroid/android_kernel_xiaomi_sdm845",
-      "branch": "14.0",
+      "branch": "11.0-polaris",
       "device": "polaris",
-      "defconfig": "vendor/xiaomi/polaris.config"
+      "defconfig": "polaris_defconfig"
     },
     "enableCcache": true,
     "toolchains": [
