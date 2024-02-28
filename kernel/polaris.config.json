@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "crdroid_11.0",
-      "repo": "https://github.com/crdroidandroid/android_kernel_xiaomi_sdm845",
-      "branch": "11.0-polaris",
-      "device": "polaris",
-      "defconfig": "polaris_defconfig"
+      "name": "MIMIX1",
+      "repo": "https://github.com/Ariden24/kernel_xiaomi_msm8996",
+      "branch": "P-KernelX",
+      "device": "lithium",
+      "defconfig": "lithium_defconfig"
     },
     "enableCcache": true,
     "toolchains": [
